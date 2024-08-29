@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <style>
+        main{
+            background-image: url("https://media.istockphoto.com/id/492193554/photo/sign-up-register-account-profile-join-concept.jpg?s=1024x1024&w=is&k=20&c=so90gP9qa4xBhhylU0YlxdX7TTvncnM7i89SfsQa-1E=");
+            background-position: top;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        .overlay{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.432);
+            width: inherit;
+            height: inherit;
+            
+        }
+        
+        form {
+background-color: teal;
+flex-direction: column;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 300px;
+width: 300px;
+color: white;
+border-radius: 30px 15px;
+/*Below are just position of the form on the page*/
+position: relative;
+top: 100px;
+left: 500px;
+ }
+ input:focus{
+            outline-style: none;
+            box-shadow: none;
+        }
+        form label, .submit{
+display: list-item; 
+margin: 10px; 
+     }
+     .submit{
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    } 
+    .submit:hover{
+background-color: antiquewhite;
+transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .submit:active{
+        background-color: transparent;
+    }
+    .Forgot-password:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    @media (max-width: 680){
+        form{
+       
+  }
+ 
+  }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="overlay"></div>
+    <form action="" method="post">
+        <h2>Student Login</h2>
+        <div>
+            <label for="Username"><strong>Username</strong></label>
+            <input type="text" placeholder="Enter your username">
+        </div>
+        <div>
+            <label for="Password"><strong>Password</strong></label>
+            <input type="password" placeholder="Enter your password" aria-label="password">
+        </div>
+        <div>
+            <input class="submit" type="submit" value="Login">
+        </div>
+        <div>
+<span class="Forgot-password"><strong><em>Forgot passwprd?</em></strong></span>
+<input type="checkbox">
+        </div>
+    </form>
+</main>
+</body>
+</html>
